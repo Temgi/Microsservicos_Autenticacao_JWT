@@ -34,8 +34,7 @@ services:
     networks:
       - auth
     ports:
-      - "6379:6379"   
-
+      - "6379:6379"
 networks:
   auth:
     driver: bridge
