@@ -31,7 +31,7 @@ public class JwtService {
 
     public String createToken(User user) {
         var data = new HashMap<String, String>();
-        data.put("id", user.getId());
+        data.put("id", ""+user.getId());
         data.put("username", user.getUsername());
         return Jwts
             .builder()
